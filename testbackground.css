@@ -1,145 +1,144 @@
-
 .footer {
-  height: 550px; /* Để chiều cao của footer tự động */
-  background-color: #060504; /* Màu nền của footer */
-}
-
-.footer-background {
-
-  width: 100%; 
-  height: 550px; 
-  z-index: -1; 
-}
-h4,span,li,a{
-  color: #fff;
-}
-
-.footer-content {
-  position: absolute;
-  z-index: 2;
-}
-
-.footer-detail {
-  color: #fff;
-  cursor: pointer;
-}
-.footer-detail:hover {
-  color: #FFFF00
-}
-
-.footer-detail:hover {
-  color: #FFFF00
-}
- img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-.custom-button {
-  background-color: #FFFF00;
-  color: black;
-  border-color: #FFFF00;
-  transition: background-color 0.3s, color 0.3s;
-}
-.custom-button:hover {
-  background-color: #e2e24e;
-  color: white;
-}
-a {
-  text-decoration: none;
-  color: black;
-} */
-
-svg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-}
-
-
-.links {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 18px;
-  font-family: sans-serif;
-}
-a {
-  text-decoration: none;
-  color: #fff;
-}
-a:hover {
-  text-decoration: none;
-}
-a img.icon {
-  display: inline-block;
-  height: 1em;
-  margin: 0 0 -0.1em 0.3em;
-}
-
-@keyframes rotate {
-0% {
-     transform: rotate(0deg);
-   }
-   100% {
-     transform: rotate(360deg);
-   }
- }
- .out-top {
-   animation: rotate 20s linear infinite;
-   transform-origin: 13px 25px;
- }
- .in-top {
-   animation: rotate 10s linear infinite;
-   transform-origin: 13px 25px;
- }
- .out-bottom {
-   animation: rotate 25s linear infinite;
-   transform-origin: 84px 93px;
- }
- .in-bottom {
-   animation: rotate 15s linear infinite;
-   transform-origin: 81px 90px;
- }
- @media screen and (max-width: 1399px) {
-  .footer {
-    height:1200px; /* Để chiều cao của footer tự động */
+    height: 550px; /* Để chiều cao của footer tự động */
+    background-color: #060504; /* Màu nền của footer */
   }
   
   .footer-background {
   
-    height: 1200px; 
-   
+    width: 100%; 
+    height: 550px; 
+    z-index: -1; 
   }
-}
-
-  @media screen and (max-width: 1200px) {
+  h4,span,li,a{
+    color: #fff;
+  }
+  
+  .footer-content {
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .footer-detail {
+    color: #fff;
+    cursor: pointer;
+  }
+  .footer-detail:hover {
+    color: #FFFF00
+  }
+  
+  .footer-detail:hover {
+    color: #FFFF00
+  }
+   img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .custom-button {
+    background-color: #FFFF00;
+    color: black;
+    border-color: #FFFF00;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .custom-button:hover {
+    background-color: #e2e24e;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  } */
+  
+  svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  
+  .links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  a img.icon {
+    display: inline-block;
+    height: 1em;
+    margin: 0 0 -0.1em 0.3em;
+  }
+  
+  @keyframes rotate {
+  0% {
+       transform: rotate(0deg);
+     }
+     100% {
+       transform: rotate(360deg);
+     }
+   }
+   .out-top {
+     animation: rotate 20s linear infinite;
+     transform-origin: 13px 25px;
+   }
+   .in-top {
+     animation: rotate 10s linear infinite;
+     transform-origin: 13px 25px;
+   }
+   .out-bottom {
+     animation: rotate 25s linear infinite;
+     transform-origin: 84px 93px;
+   }
+   .in-bottom {
+     animation: rotate 15s linear infinite;
+     transform-origin: 81px 90px;
+   }
+   @media screen and (max-width: 1399px) {
     .footer {
-      height:1300px; /* Để chiều cao của footer tự động */
+      height:1200px; /* Để chiều cao của footer tự động */
     }
     
     .footer-background {
     
-      height: 1300px; 
+      height: 1200px; 
      
     }
-   
-
-    @media screen and (max-width: 960px) {
+  }
+  
+    @media screen and (max-width: 1200px) {
       .footer {
-        height:1250px; /* Để chiều cao của footer tự động */
+        height:1300px; /* Để chiều cao của footer tự động */
       }
       
       .footer-background {
       
-        height: 1250px; 
+        height: 1300px; 
        
       }
-
-}
-
-
-
-}
+     
+  
+      @media screen and (max-width: 960px) {
+        .footer {
+          height:1250px; /* Để chiều cao của footer tự động */
+        }
+        
+        .footer-background {
+        
+          height: 1250px; 
+         
+        }
+  
+  }
+  
+  
+  
+  }
