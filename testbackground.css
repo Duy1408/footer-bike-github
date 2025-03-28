@@ -1,15 +1,18 @@
 .footer {
-    height: 550px; /* Để chiều cao của footer tự động */
+    height: 570px; /* Để chiều cao của footer tự động */
     background-color: #060504; /* Màu nền của footer */
   }
   
   .footer-background {
   
     width: 100%; 
-    height: 550px; 
+    height: 570px; 
     z-index: -1; 
   }
-  h4,span,li,a{
+  h4{
+    color: #FFFF00;
+  }
+  span,li,a{
     color: #fff;
   }
   
@@ -22,10 +25,6 @@
     color: #fff;
     cursor: pointer;
   }
-  .footer-detail:hover {
-    color: #FFFF00
-  }
-  
   .footer-detail:hover {
     color: #FFFF00
   }
@@ -116,24 +115,24 @@
   
     @media screen and (max-width: 1200px) {
       .footer {
-        height:1300px; /* Để chiều cao của footer tự động */
+        height:1390px; /* Để chiều cao của footer tự động */
       }
       
       .footer-background {
       
-        height: 1300px; 
+        height: 1390px; 
        
       }
      
   
       @media screen and (max-width: 960px) {
         .footer {
-          height:1250px; /* Để chiều cao của footer tự động */
+          height:1350px; /* Để chiều cao của footer tự động */
         }
         
         .footer-background {
         
-          height: 1250px; 
+          height: 1350px; 
          
         }
   
