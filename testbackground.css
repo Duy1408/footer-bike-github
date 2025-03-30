@@ -1,6 +1,6 @@
 .footer {
-    height: 570px; /* Để chiều cao của footer tự động */
-    background-color: #060504; /* Màu nền của footer */
+    height: 570px; 
+    background-color: #060504;
   }
   
   .footer-background {
@@ -115,7 +115,7 @@
   
     @media screen and (max-width: 1200px) {
       .footer {
-        height:1390px; /* Để chiều cao của footer tự động */
+        height:1390px;
       }
       
       .footer-background {
@@ -127,7 +127,7 @@
   
       @media screen and (max-width: 960px) {
         .footer {
-          height:1350px; /* Để chiều cao của footer tự động */
+          height:1350px; 
         }
         
         .footer-background {
