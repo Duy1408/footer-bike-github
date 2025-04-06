@@ -32,7 +32,18 @@
                 <div class="mb-3" style="width: 100%; border: 2px solid yellow;"></div>
                 <div class="row">
                     <div class=" col-6 col-lg">
-                        <img src="picture/1.png" alt="">
+                        <img id="pic1" src="picture/6.png" alt="">
+                        <div class="row">
+                            <div class="col-5 col-lg-4" onmouseover="changeImage('pic2')" onmouseout="resetImage()" >
+                                <img style="width: 75px; height: 75px;" id="pic2" src="picture/4.png" alt="">
+                            </div>
+                            <div class="col-6 col-lg-4" onmouseover="changeImage('pic3')" onmouseout="resetImage()" >
+                                <img style="width: 75px; height: 75px;" id="pic3" src="picture/5.png" alt="">
+                            </div>
+                            <div class="col-12 col-lg-4" onmouseover="changeImage('pic4')" onmouseout="resetImage()">
+                                <img style="width: 75px; height: 75px;" id="pic4" src="picture/6.png" alt="">
+                            </div>
+                        </div>
                         <div>tên xe</div>
                     </div>
                     <div class="col-6 col-lg">
@@ -92,19 +103,19 @@
                 <div class="mb-3" style="width: 100%; border: 2px solid yellow;"></div>
                 <div class="row">
                     <div class=" col-6 col-lg">
-                        <img src="picture/xedien3.png" alt="">
+                        <img  src="picture/xedien3.png" alt="">
                         <div>tên xe</div>
                     </div>
                     <div class="col-6 col-lg">
-                        <img src="picture/xedien3.png" alt="">
+                        <img  src="picture/xedien3.png" alt="">
                         <div>tên xe</div>
                     </div>
                     <div class="col-6 mt-5 mt-lg-0 col-lg">
-                        <img src="picture/xedien3.png" alt="">
+                        <img  src="picture/xedien3.png" alt="">
                         <div>tên xe</div>
                     </div>
                     <div class="col-6 mt-5 mt-lg-0 col-lg">
-                        <img src="picture/xedien3.png" alt="">
+                        <img  src="picture/xedien3.png" alt="">
                         <div>tên xe</div>
                     </div>
 
@@ -282,4 +293,20 @@
             </svg>
         </div>
     </div>
+    <script>
+        const pic1 = document.getElementById('pic1');
+        const pic2 = document.getElementById('pic2');
+        const pic3 = document.getElementById('pic3');
+        const pic4 = document.getElementById('pic4');
+        
+        // Hàm thay đổi ảnh khi rê chuột
+        function changeImage(picId) {
+            const newPic = document.getElementById(picId);
+            pic1.src = newPic.src; // Thay đổi ảnh của pic1 bằng ảnh của pic2, pic3 hoặc pic4
+        }
+        
+        // Hàm khôi phục ảnh gốc khi không rê chuột
+        function resetImage() {
+            pic1.src = 'picture/1.png'; // Quay lại ảnh gốc
+        }</script>
 </body>
