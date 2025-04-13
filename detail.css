@@ -4,5 +4,9 @@ span,li,a{
   
   a {
     text-decoration: none;
-    color: black;
   } 
+  @media screen and (max-width: 1399px) {
+img{
+  width: 30%;
+}
+}

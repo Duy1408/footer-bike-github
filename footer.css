@@ -16,7 +16,7 @@
     color: #fff;
   }
   
-  .footer-content {
+  #footer-content {
     position: absolute;
     z-index: 2;
   }
