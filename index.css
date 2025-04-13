@@ -1,0 +1,12 @@
+
+  @media screen and (max-width: 530px) {
+    .tiktok-embed {
+      width: 350px !important;
+  }
+    .facebook-embed{
+      width: 350px;
+    }
+}
+  
+  
+  
