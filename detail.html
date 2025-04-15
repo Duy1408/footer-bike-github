@@ -50,22 +50,31 @@
                         </div>
 
                         <div class="payment">
-                            <div class="mt-3">
-                                <!-- <button id="color-changing-button" style="width: 100%; font-weight: bold;" type="button" class="btn btn-warning color-changing">Mua ngay</button> -->
-                                <button style=" font-family: 'Courier New', monospace;" class="attractive-button color-changing">Mua ngay</button>
-                            </div>
                             <div class="row mt-2">
-                                <div class="col-xxl">
-                                    <button style="width: 100%; font-weight: bold; font-family: 'Courier New', monospace;" type="button" class="btn btn-primary">Trả Góp</button>
+                                <div class="col-xxl-3">
+                                    <input type="number" class="form-control" id="soLuong" value="1" min="1">
                                 </div>
-                                <div class="col-xxl mt-2 mt-xxl-0 ">
+                                <div class="col-xxl-9 ">
+                                    <button style="font-weight: bold; font-family: 'Roboto', sans-serif;" type="button" class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                                </div>
+
+                            </div>
+                            <div class="mt-3 text-center">
+                                <!-- <button id="color-changing-button" style="width: 100%; font-weight: bold;" type="button" class="btn btn-warning color-changing">Mua ngay</button> -->
+                                <button style=" width: 96%; font-family: 'Roboto', sans-serif;" class="attractive-button color-changing">Mua ngay</button>
+                            </div>
+                            <div class="row mt-2 ">
+                                <div class="col-xxl ">
+                                    <button style="width: 100%; font-weight: bold; font-family: 'Roboto', sans-serif;" type="button" class="btn btn-primary">Trả Góp</button>
+                                </div>
+                                <div class="col-xxl mt-2 mt-xxl-0  ">
                                     <button style="width: 100%; font-weight: bold;font-family: 'Roboto', sans-serif;" type="button" class="btn btn-danger">Trả Góp Qua Thẻ</button>
                                 </div>
 
                             </div>
 
                             <div class="mt-2">
-                                <button style="width: 100%;  font-weight: bold;font-family: 'Pacifico', cursive;" type="button" class="btn btn-success">Trả Góp Online</button>
+                                <button style="width: 100%;  font-weight: bold;font-family: 'Roboto', sans-serif;" type="button" class="btn btn-success">Trả Góp Online</button>
                             </div>
 
                         </div>
@@ -86,16 +95,25 @@
 
         </div>
 
+        <!-- mô tả sản phẩm/ hướng dẫn thanh toán  -->
+         <div class="row mt-5">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+               <div class="row">
+                <div class="col-xxl-3">Mô Tả Sản Phẩm</div>
+                <div class="col-xxl-3">Phương Thức Thanh Toán</div>
+
+               </div>
+            </div>
+            <div class="col-sm-1"></div>
+
+         </div>
+
         <script>
             const elements = document.querySelectorAll(".color-changing");
         
             
-            const colors = [  "#333333", 
-  "#ffe600", 
-  "#00bcd4", 
-  "#ffccff",
-  "#ff8c00", 
-  "#4b0082"];
+            const colors = [  "#333333", "#ffe600", "#00bcd4", "#ffccff","#ff8c00", "#4b0082"];
             let colorIndex = 0;
         
             setInterval(() => {
