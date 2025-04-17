@@ -116,18 +116,18 @@
             <div class="col-sm-10">
                 <div class="row">
                     <div class="col-xxl-2">
-                        <h5> Mô Tả Sản Phẩm</h5>
+                        <h5 id="description-title"> Mô Tả Sản Phẩm</h5>
                     </div>
 
                     <div class="col-xxl-3">
-                        <h5> Hướng Dẫn Mua Hàng</h5>
+                        <h5 id="payment-policy-title"> Hướng Dẫn Mua Hàng</h5>
                     </div>
 
 
                 </div>
                 <div class="mb-3" style="width: 100%; border: 2px solid yellow;"></div>
                 <div class="">
-                    <span class="chính sách thanh toán ">
+                    <span class="payment-policy">
                         <p>
                             <strong>Bước 1:</strong>
                             Truy cập website và lựa chọn sản phẩm cần mua
@@ -172,6 +172,7 @@
                             Trân trọng cảm ơn.
                         </p>
                     </span>
+                    <span class="description">Mô tả sản phẩm tại đây</span>
 
                 </div>
             </div>
@@ -214,6 +215,26 @@
                 })
                 .catch(error => console.error('Lỗi khi tải footer:', error));
         </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const descriptionTitle = document.getElementById("description-title");
+        const paymentTitle = document.getElementById("payment-policy-title");
+        const description = document.querySelector(".description");
+        const paymentPolicy = document.querySelector(".payment-policy");
+
+        descriptionTitle.addEventListener("click", function () {
+            description.style.display = "block";
+            paymentPolicy.style.display = "none";
+        });
+
+        paymentTitle.addEventListener("click", function () {
+            description.style.display = "none";
+            paymentPolicy.style.display = "block";
+        });
+    });
+</script>
+
 
 
 
