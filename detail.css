@@ -22,6 +22,14 @@
   50% { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
+.text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+.color-changing{
+  font-size: 22px;
+   font-weight: bold;
+}
 
 
 span,li,a{
