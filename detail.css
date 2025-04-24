@@ -49,4 +49,11 @@ span,li,a{
 img{
   width: 30%;
 }
+
+@media screen and (max-width: 459px){
+#payment-policy-title,#description-title{
+  font-size: 18px;
+}
+}
+
 }
