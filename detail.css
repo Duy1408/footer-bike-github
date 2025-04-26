@@ -35,6 +35,9 @@
 span,li,a{
     color: black;
   }
+  li{
+    font-size: 15px;
+  }
   
   a {
     text-decoration: none;
