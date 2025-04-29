@@ -1,0 +1,13 @@
+p{
+font-size: 18px;
+font-family:" 'Roboto', sans-serif";
+cursor: pointer;
+
+}
+p:hover{
+    color: #c20000;
+}
+h2{
+    background-image: url(picture//newbackground.png) ;
+    
+}
