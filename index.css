@@ -1,5 +1,38 @@
 
-  @media screen and (max-width: 530px) {
+@keyframes ring {
+  0% { transform: rotate(0deg); }
+  1% { transform: rotate(30deg); }
+
+ 
+
+
+  11% { transform: rotate(-28deg); }
+  13% { transform: rotate(26deg); }
+  15% { transform: rotate(-24deg); }
+  17% { transform: rotate(22deg); }
+  
+  21% { transform: rotate(18deg); }
+  23% { transform: rotate(-16deg); }
+  
+  27% { transform: rotate(-12deg); }
+  29% { transform: rotate(10deg); }
+  31% { transform: rotate(-8deg); }
+
+   
+  37% { transform: rotate(2deg); }
+ 
+  41% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.ringing {
+  animation: ring 1.5s infinite;
+  display: inline-block;
+  font-size: 24px;
+ 
+}
+ 
+ @media screen and (max-width: 530px) {
     .tiktok-embed {
       width: 350px !important;
   }
