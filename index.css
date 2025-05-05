@@ -24,6 +24,13 @@
   41% { transform: rotate(0deg); }
   100% { transform: rotate(0deg); }
 }
+li{
+  cursor: pointer;
+  list-style-type: none;
+}
+li:hover{
+  color: brown;
+}
 
 .ringing {
   animation: ring 1.5s infinite;
