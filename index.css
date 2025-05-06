@@ -38,6 +38,19 @@ li:hover{
   font-size: 24px;
  
 }
+#carouselExampleIndicators-danhmuc{
+  display: none;
+}
+
+@media screen and (max-width: 1110px) {
+#carouselExampleIndicators-danhmuc{
+  display: block;
+}
+#danhmuc{
+  display: none;
+}
+}
+
  
  @media screen and (max-width: 530px) {
     .tiktok-embed {
