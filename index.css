@@ -1,29 +1,4 @@
 
-@keyframes ring {
-  0% { transform: rotate(0deg); }
-  1% { transform: rotate(30deg); }
-
- 
-
-
-  11% { transform: rotate(-28deg); }
-  13% { transform: rotate(26deg); }
-  15% { transform: rotate(-24deg); }
-  17% { transform: rotate(22deg); }
-  
-  21% { transform: rotate(18deg); }
-  23% { transform: rotate(-16deg); }
-  
-  27% { transform: rotate(-12deg); }
-  29% { transform: rotate(10deg); }
-  31% { transform: rotate(-8deg); }
-
-   
-  37% { transform: rotate(2deg); }
- 
-  41% { transform: rotate(0deg); }
-  100% { transform: rotate(0deg); }
-}
 li{
   cursor: pointer;
   list-style-type: none;
@@ -32,16 +7,90 @@ li:hover{
   color: brown;
 }
 
-.ringing {
-  animation: ring 1.5s infinite;
-  display: inline-block;
-  font-size: 24px;
- 
-}
+
 #carouselExampleIndicators-danhmuc{
   display: none;
 }
 
+
+.phone-container {
+
+  position: fixed;       
+  bottom: 0;            
+  left: 0;               
+  margin-left: 30px;     
+  margin-bottom: 20px;   
+  display: flex;
+  align-items: center;
+  z-index: 999; 
+  cursor: pointer;
+}
+
+.wave {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 215, 0, 0.5); 
+  width: 80px; 
+  height: 80px; 
+  animation: wave-animation 1.5s infinite; 
+  opacity: 0; 
+  left: 4px; 
+  top: 50%; 
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.wave:nth-child(2) {
+  width: 100px; 
+  height: 100px; 
+  animation-delay: 2s; 
+}
+
+@keyframes wave-animation {
+  0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: translate(-50%, -50%) scale(1.5);
+      opacity: 0;
+  }
+}
+
+.phone-icon {
+  background-color: #ffd700; 
+  border-radius: 50%;
+  color: white; 
+  padding: 10px;
+  width: 60px;
+  height: 60px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: -30px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  font-size: 32px; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.phone-icon:hover {
+  background-color: #ccaa20; 
+  color: #000; 
+}
+
+.phone-button {
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-decoration: none;
+  color: #900;
+  font-size: 18px;
+  padding-left: 50px; /* Để có khoảng trống cho icon */
+}
 @media screen and (max-width: 1110px) {
 #carouselExampleIndicators-danhmuc{
   display: block;
