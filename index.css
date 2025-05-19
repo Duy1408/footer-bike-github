@@ -37,6 +37,10 @@
     height: 100%;
     object-fit: cover;
 }
+.icon-phone{
+  display: none;
+}
+
 
 /* .... */
 li{
@@ -143,6 +147,16 @@ li:hover{
   display: none;
 }
 }
+ 
+ @media screen and (max-width: 768px) {
+.icon-phone{
+  display: block;
+}
+.icon-pc{
+  display: none;
+}
+
+}
 
  
  @media screen and (max-width: 530px) {
@@ -152,6 +166,7 @@ li:hover{
     .facebook-embed{
       width: 350px;
     }
+
 }
   
   
