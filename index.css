@@ -139,6 +139,15 @@ li:hover{
   letter-spacing: 1px;   
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+  .carousel-img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+  }
+
+
 @media screen and (max-width: 1110px) {
 #carouselExampleIndicators-danhmuc{
   display: block;
@@ -158,6 +167,12 @@ li:hover{
 }
 
 }
+
+  @media screen  and (max-width: 576px) {
+    .carousel-img {
+      max-height: 250px; /* Tùy chỉnh kích thước trên điện thoại */
+    }
+  }
 
  
  @media screen and (max-width: 530px) {
