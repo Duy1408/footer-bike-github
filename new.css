@@ -11,3 +11,32 @@ h2{
     background-image: url(picture//newbackground.png) ;
     
 }
+
+#carouselExampleIndicators-tintucnoibat{
+    display: none;
+}
+
+#carouselExampleIndicators-sanphamkhuyenmai{
+    display: none;
+}
+
+
+@media screen and (max-width: 576px) {
+    .tin-tuc-noi-bat{
+        display: none;
+
+    }
+    .sanphamkhuyenmai{
+          display: none;
+    }
+#carouselExampleIndicators-tintucnoibat{
+  display: block;
+  
+}
+
+#carouselExampleIndicators-sanphamkhuyenmai{
+    display: block;
+}
+
+
+}

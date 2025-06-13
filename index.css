@@ -170,7 +170,7 @@ li:hover{
 
   @media screen  and (max-width: 576px) {
     .carousel-img {
-      max-height: 250px; /* Tùy chỉnh kích thước trên điện thoại */
+      max-height: 250px; 
     }
   }
 
